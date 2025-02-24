@@ -1,22 +1,33 @@
-Add Dependency
+# Jetpack Compose Loading Bar
+
+### Add Dependency
 Add the following dependency in your build.gradle.kts
 
+```
 dependencies {
     implementation("com.github.tmfrl1590:ComposeLoadingBar:1.0.0")
 }
+```
 
+```
 dependencyResolutionManagement {
     repositories {
         maven { url = uri("https://jitpack.io") }
     }
 }
+```
+
+### Use
 
 Basic Example
 
+```
 CircularLoadingSpinner()
+```
 
 Usage in Compose Layout
 
+```
 @Composable
 fun LoadingScreen() {
     Box(
@@ -32,3 +43,4 @@ fun LoadingScreen() {
         )
     }
 }
+```
