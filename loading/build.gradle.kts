@@ -29,8 +29,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
+    }
+
     kotlinOptions {
         jvmTarget = "17"
+    }
+
+    buildFeatures {
+        compose = true
     }
 }
 
@@ -69,6 +77,13 @@ afterEvaluate {
                     description.set("A lightweight and customizable loading spinner for Jetpack Compose.")
                     url.set("https://github.com/tmfrl1590/ComposeLoadingBar")
                 }
+            }
+
+            create<MavenPublication>("debug") { // ✅ debug 빌드 추가
+                from(components["debug"])
+                groupId = "com.github.tmfrl1590"
+                artifactId = "ComposeLoadingBar"
+                version = "1.0.0"
             }
         }
     }
