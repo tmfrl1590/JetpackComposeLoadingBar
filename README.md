@@ -5,7 +5,7 @@ Add the following dependency in your build.gradle.kts
 
 ```
 dependencies {
-    implementation("com.github.tmfrl1590:ComposeLoadingBar:1.0.0")
+    implementation("com.github.tmfrl1590:ComposeLoadingBar:<version>")
 }
 ```
 
