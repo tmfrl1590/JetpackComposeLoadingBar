@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "compose-loading"
 include(":app")
- 
+include(":loading")
