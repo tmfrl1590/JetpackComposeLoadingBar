@@ -1,8 +1,19 @@
 # Jetpack Compose Loading Bar
-This library is designed to implement a variety of loading screens in Jetpack Compose.
+This library is designed to implement various Jetpack Compose loading bars.
 
-## Add Dependency
-Add the following dependency in your build.gradle.kts
+If you need a specific loading bar, feel free to reach out anytime.
+
+For any inquiries or requests, please contact me at tmfrl1590@gmail.com. Thank you! 😊
+
+<br>
+
+| CircularLoadingSpinner | DotLoadingSpinner |
+|------------------------|------------------|
+| <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/08f10d4e-b5de-460e-93f5-7efd5a2872d5" width="150">&nbsp;&nbsp;&nbsp;&nbsp;</p> | <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/af4ea51f-e42e-4125-ae37-54726da93f3a" width="150">&nbsp;&nbsp;&nbsp;&nbsp;</p> |
+
+
+## 📦 Installation
+Add the following dependency to your **`build.gradle.kts`**:
 
 ```
 dependencies {
@@ -17,12 +28,14 @@ dependencyResolutionManagement {
     }
 }
 ```
----
-## How to Use
 
-### 1. CircularLoadingSpinner
+## 🛠 How to Use
 
-Basic Example
+### 1️⃣ CircularLoadingSpinner
+
+A smooth circular loading animation, customizable with stroke width, rotation speed, and colors.
+
+🔹 Basic Usage
 ```
 @Composable
 fun LoadingScreen() {
@@ -31,7 +44,7 @@ fun LoadingScreen() {
     }
 }
 ```
-Usage in Compose Layout
+🔹 Customizable Example
 
 ```
 @Composable
@@ -51,8 +64,24 @@ fun LoadingScreen() {
 }
 ```
 
-### 2. DotLoadingSpinner
-   Basic Example
+🔹 Properties:
+
+color: Sets the spinner color (default: Black).
+
+strokeWidth: Defines the thickness of the circular stroke.
+
+diameter: Adjusts the spinner size.
+
+sweepAngle: Controls how much of the circle is visible.
+
+rotationSpeed: Determines the animation speed (in milliseconds).
+
+
+### 2️⃣ DotLoadingSpinner
+
+A minimalist dot-based loading animation, perfect for indicating progress subtly.
+
+🔹 Basic Usage
 ```
 @Composable
 fun LoadingScreen() {
@@ -61,7 +90,7 @@ fun LoadingScreen() {
     }
 }
 ```
-Usage in Compose Layout
+🔹 Customizable Example
 
 ```
 @Composable
@@ -81,10 +110,21 @@ fun LoadingScreen() {
 }
 ```
 
+🔹 Properties:
 
-|CircularLoadingSpinner|DotLoadingSpinner|
-|------|---|
-|https://github.com/user-attachments/assets/b83c647f-33fb-4945-bd40-916d1f8ac6d9|https://github.com/user-attachments/assets/0418db3f-a8bc-4112-bdbb-c787f7026ea5|
+color: Changes the color of the dots.
+
+isReverse: Flips the animation direction.
+
+dotCount: Defines the number of dots in the animation.
+
+animationDuration: Controls how fast the dots animate.
+
+dotSize: Adjusts the size of each dot.
+
+
+
+
 
 
 
