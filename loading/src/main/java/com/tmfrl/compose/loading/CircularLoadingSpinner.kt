@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun CircularLoadingSpinner(
     modifier: Modifier = Modifier,
-    color: Color = Color.Blue,
+    color: Color = Color.Black,
     strokeWidth: Dp = 4.dp,
     diameter: Dp = 50.dp,
     sweepAngle: Float = 270f,
