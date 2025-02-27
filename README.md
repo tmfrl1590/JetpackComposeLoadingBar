@@ -7,9 +7,10 @@ For any inquiries or requests, please contact me at tmfrl1590@gmail.com. Thank y
 
 <br>
 
-| CircularLoadingSpinner | DotLoadingSpinner |
-|------------------------|------------------|
-| <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/08f10d4e-b5de-460e-93f5-7efd5a2872d5" width="150">&nbsp;&nbsp;&nbsp;&nbsp;</p> | <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/user-attachments/assets/af4ea51f-e42e-4125-ae37-54726da93f3a" width="150">&nbsp;&nbsp;&nbsp;&nbsp;</p> |
+| CircularLoadingSpinner | DotLoadingSpinner | DotRippleSpinner |
+|------------------------|-------------------|------------------|
+| <p align="center"><img src="https://github.com/user-attachments/assets/08f10d4e-b5de-460e-93f5-7efd5a2872d5" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/af4ea51f-e42e-4125-ae37-54726da93f3a" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/ee878563-5f46-49ac-9bf0-d73da97ce427" width="150"></p> |
+
 
 
 ## 📦 Installation
@@ -123,10 +124,54 @@ animationDuration: Controls how fast the dots animate.
 dotSize: Adjusts the size of each dot.
 
 
+### 3️⃣ DotRippleSpinner
 
+A dynamic dot-based ripple animation that adds a ripple effect to each dot, providing a visually engaging loading indicator.
 
+🔹 Basic Usage
+```
+@Composable
+fun LoadingScreen() {
+    Box {
+        DotRippleSpinner()
+    }
+}
+```
 
+🔹 Customizable Example
 
+```
+@Composable
+fun LoadingScreen() {
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        DotRippleSpinner(
+            color = Color.Black,
+            dotCount = 4,
+            rippleSpeed = 100,
+            dotSize = 16.dp,
+            dotSpacing = 8.dp,
+            dotShape = CircleShape,
+        )
+    }
+}
+```
+
+🔹 Properties
+
+color: Changes the color of the dots (default: Black).
+
+dotCount: Defines the number of dots in the animation.
+
+rippleSpeed: Controls the speed of the ripple animation; the total animation duration is calculated as rippleSpeed * dotCount.
+
+dotSize: Adjusts the size of each dot.
+
+dotSpacing: Sets the spacing between the dots.
+
+dotShape: Determines the shape of each dot in the animation (default: CircleShape).
 
 
 
