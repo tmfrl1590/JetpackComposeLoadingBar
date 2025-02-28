@@ -19,6 +19,40 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+/**
+ * CircularLoadingSpinner Composable
+ *
+ * A customizable circular loading animation for Jetpack Compose.
+ * The spinner rotates infinitely, with adjustable stroke width, rotation speed, and arc sweep angle.
+ *
+ * @param modifier Modifier to apply to the composable.
+ * @param color The color of the loading arc (default: Black).
+ * @param strokeWidth The thickness of the stroke in dp (default: 4.dp).
+ * @param diameter The overall size of the spinner (default: 50.dp).
+ * @param sweepAngle The angle of the arc in degrees (default: 270f).
+ * @param rotationSpeed The duration of a full rotation in milliseconds (default: 1200ms).
+ *
+ * Example usage:
+ * ```
+ * @Composable
+ * fun LoadingScreen() {
+ *     Box(
+ *         modifier = Modifier.fillMaxSize(),
+ *         contentAlignment = Alignment.Center
+ *     ) {
+ *         CircularLoadingSpinner(
+ *             color = Color.Blue,
+ *             strokeWidth = 6.dp,
+ *             diameter = 60.dp,
+ *             sweepAngle = 240f,
+ *             rotationSpeed = 1000
+ *         )
+ *     }
+ * }
+ * ```
+ */
+
+
 @Composable
 fun CircularLoadingSpinner(
     modifier: Modifier = Modifier,

@@ -18,6 +18,40 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 
+/**
+ * DotLoadingSpinner Composable
+ *
+ * A simple dot-based loading animation for Jetpack Compose.
+ * The dots scale up and down sequentially to create a smooth loading effect.
+ * Supports customization of color, speed, number of dots, size, and animation direction.
+ *
+ * @param modifier Modifier to apply to the composable.
+ * @param color The color of the dots (default: Black).
+ * @param isReverse If true, the animation plays in reverse order (default: false).
+ * @param dotCount The number of dots in the animation (default: 4).
+ * @param animationDuration The duration of each dot's animation in milliseconds (default: 100ms).
+ * @param dotSize The size of each dot (default: 20.dp).
+ *
+ * Example usage:
+ * ```
+ * @Composable
+ * fun LoadingScreen() {
+ *     Box(
+ *         modifier = Modifier.fillMaxSize(),
+ *         contentAlignment = Alignment.Center
+ *     ) {
+ *         DotLoadingSpinner(
+ *             color = Color.Red,
+ *             isReverse = true,
+ *             dotCount = 5,
+ *             animationDuration = 150,
+ *             dotSize = 16.dp
+ *         )
+ *     }
+ * }
+ * ```
+ */
+
 @Composable
 fun DotLoadingSpinner(
     modifier: Modifier = Modifier,
