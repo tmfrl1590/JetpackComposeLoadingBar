@@ -53,27 +53,20 @@ dependencies {
     implementation(libs.androidx.material3)
 }
 
-// ✅ JitPack을 통한 배포 설정
+// JitPack deployment setup
 afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-                // ✅ GitHub 사용자 이름과 라이브러리 이름을 설정
-                groupId = "com.github.tmfrl1590"  // GitHub 사용자 이름 (예: tmfrl1590)
-                artifactId = "JetpackComposeLoadingBar"  // 공개할 라이브러리 이름
-                version = "1.0.0"  // 버전
+                groupId = "com.github.tmfrl1590"
+                artifactId = "JetpackComposeLoadingBar"
+                version = "1.0.0"
 
-                // ✅ 필요하면 POM 설명 추가
-                pom {
-                    name.set("Compose Loading Bar")
-                    description.set("A lightweight and customizable loading spinner for Jetpack Compose.")
-                    url.set("https://github.com/tmfrl1590/JetpackComposeLoadingBar")
-                }
             }
 
-            create<MavenPublication>("debug") { // ✅ debug 빌드 추가
+            create<MavenPublication>("debug") {
                 from(components["debug"])
                 groupId = "com.github.tmfrl1590"
                 artifactId = "JetpackComposeLoadingBar"
