@@ -7,9 +7,14 @@ For any inquiries or requests, please contact me at tmfrl1590@gmail.com. Thank y
 
 <br>
 
-| CircularLoadingSpinner | DotLoadingSpinner | DotRippleSpinner |
-|------------------------|-------------------|------------------|
-| <p align="center"><img src="https://github.com/user-attachments/assets/08f10d4e-b5de-460e-93f5-7efd5a2872d5" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/af4ea51f-e42e-4125-ae37-54726da93f3a" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/ee878563-5f46-49ac-9bf0-d73da97ce427" width="150"></p> |
+| CircularLoadingSpinner | SquareSpinner |
+|------------------------|--------------|
+| <p align="center"><img src="https://github.com/user-attachments/assets/d62e186b-dbd2-458c-ac23-4a62e3c5bd60" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/c9bfbe81-eb66-4fac-bb20-b8b22c59da55" width="150"></p> |
+
+| DotSpinner | DotRippleSpinner |
+|------------|------------------|
+| <p align="center"><img src="https://github.com/user-attachments/assets/af4ea51f-e42e-4125-ae37-54726da93f3a" width="150"></p> | <p align="center"><img src="https://github.com/user-attachments/assets/ee878563-5f46-49ac-9bf0-d73da97ce427" width="150"></p> |
+
 
 
 
